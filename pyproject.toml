@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tno.sdg.tabular.eval.utility_metrics"
+description = "Utility metrics for tabular data"
+readme = "README.md"
+authors = [{name = "TNO PET Lab", email = "petlab@tno.nl"}]
+maintainers = [{name = "TNO PET Lab", email = "petlab@tno.nl"}]
+keywords = [
+    "TNO",
+    "SDG",
+    "synthetic data",
+    "synthetic data generation",
+    "tabular",
+    "evaluation",
+    "utility",
+]
+license = {text = "Apache License, Version 2.0"}
+classifiers = [
+   "License :: OSI Approved :: Apache Software License",
+   "Programming Language :: Python :: 3",
+   "Operating System :: OS Independent",
+   "Intended Audience :: Developers",
+   "Intended Audience :: Information Technology",
+   "Intended Audience :: Science/Research",
+   "Typing :: Typed",
+   "Topic :: Scientific/Engineering"
+]
+urls = {Homepage = "https://pet.tno.nl/", Documentation = "https://docs.pet.tno.nl/sdg/tabular/eval/utility-metrics/0.3.0", Source = "https://github.com/TNO-SDG/tabular.eval.utility_metrics"}
+dynamic = ["version"]
+requires-python = ">=3.8"
+dependencies = [
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "pandas-stubs",
+    "plotly",
+    "scikit-learn",
+    "seaborn",
+    "statsmodels",
+]
+
+[project.optional-dependencies]
+tests = [
+    "pytest",
+]
+
+[tool.setuptools]
+platforms = ["any"]
+
+[tool.setuptools.dynamic]
+version = {attr = "tno.sdg.tabular.eval.utility_metrics.__version__"}
+
+[tool.setuptools.package-data]
+"*" = ["py.typed"]
+
