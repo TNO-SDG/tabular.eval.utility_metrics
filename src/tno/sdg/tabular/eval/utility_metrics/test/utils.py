@@ -103,7 +103,7 @@ def _to_multiple_dataframes(
     return pd.DataFrame(data=data1), pd.DataFrame(data=data2)
 
 
-def _chunks(lst: list[Any]) -> Generator[list[Any], None, None]:
+def _chunks(lst: list[Any]) -> Generator[list[Any]]:
     """
     Cut a list of arbitrary elements into chunks.
 

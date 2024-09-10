@@ -12,7 +12,9 @@ def roc_curve(
     pos_label: int | str | None = None,
     sample_weight: npt.ArrayLike | None = ...,
     drop_intermediate: bool = ...,
-) -> tuple[npt.NDArray[np.float_], npt.NDArray[np.float_], npt.NDArray[np.float_]]: ...
+) -> tuple[
+    npt.NDArray[np.float64], npt.NDArray[np.float64], npt.NDArray[np.float64]
+]: ...
 def roc_auc_score(
     y_true: npt.NDArray[Any],
     y_score: npt.NDArray[Any],

@@ -1,5 +1,5 @@
 """
-Utility Metrics.
+Root imports for the tno.sdg.tabular.eval.utility_metrics package.
 """
 
 # Explicit re-export of all functionalities, such that they can be imported properly. Following
@@ -25,4 +25,4 @@ from .spiderplot import compute_all_metrics as compute_all_metrics
 from .spiderplot import compute_spider_plot as compute_spider_plot
 from .univariate_distributions import visualise_distributions as visualise_distributions
 
-__version__ = "0.3.0"
+__version__ = "0.3.2"

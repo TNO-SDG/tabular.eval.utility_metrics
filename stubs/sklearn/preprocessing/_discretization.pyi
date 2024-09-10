@@ -11,7 +11,7 @@ Number = int | float
 
 Array = (
     npt.ArrayLike
-    | npt.NDArray[np.float_]
+    | npt.NDArray[np.float64]
     | npt.NDArray[np.int_]
     | List[List[Number]]
     | List[Number]

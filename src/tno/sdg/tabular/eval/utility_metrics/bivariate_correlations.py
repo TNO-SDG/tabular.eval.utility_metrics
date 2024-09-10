@@ -31,7 +31,7 @@ def avg_abs_correlation_difference(
     synthetic_data: pd.DataFrame,
     cols_cat: Sequence[str],
     n_bins: int = 50,
-) -> npt.NDArray[np.float_]:
+) -> npt.NDArray[np.float64]:
     """
     Compute of the total weighted average absolute difference between the correlations in the original
     dataframe and the correlations in the synthetic dataframe. Using Pearson's R, Cramer's V and ANOVA methods.
@@ -84,7 +84,7 @@ def avg_abs_correlation_difference(
     U_weighted = (U_weighted_pearson + U_weighted_cramer + U_weighted_anova) / (
         weight_pearson + weight_cramer + weight_anova
     )
-    return cast(npt.NDArray[np.float_], U_weighted)
+    return cast(npt.NDArray[np.float64], U_weighted)
 
 
 def avg_abs_correlation_difference_cramers(
@@ -301,7 +301,7 @@ def avg_abs_correlation_difference_anova(
     anova_synthetic = compute_anova_correlation(synthetic_data, cols_cat)
 
     # Calculate difference between correlations
-    abs_difference_corr: npt.NDArray[np.float_] = abs(
+    abs_difference_corr: npt.NDArray[np.float64] = abs(
         np.array(anova_original) - np.array(anova_synthetic)
     )
     absdiff_corr_anova_average = cast(float, np.mean(abs_difference_corr))

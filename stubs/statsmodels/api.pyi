@@ -5,7 +5,7 @@ import numpy.typing as npt
 
 class RegressionResults:
     @property
-    def fittedvalues(self) -> npt.NDArray[np.float_]: ...
+    def fittedvalues(self) -> npt.NDArray[np.float64]: ...
 
 class RegressionModel:
     def fit(

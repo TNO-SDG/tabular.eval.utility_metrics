@@ -265,9 +265,10 @@ def visualise_regression_scores(  # pylint: disable=too-many-arguments
     )
 
     cols_num = set(original_data.columns) - set(cols_cat)
-    index_num = [original_data.columns.get_loc(c) for c in cols_num if c in cols_num]
+    index_num = np.array(
+        [original_data.columns.get_loc(c) for c in cols_num if c in cols_num]
+    )
 
-    # Keep only the numerical columns to show R-squared
     regression_original_num = pd.DataFrame(regression_original).iloc[index_num]
     regression_synthetic_num = pd.DataFrame(regression_synthetic).iloc[index_num]
 

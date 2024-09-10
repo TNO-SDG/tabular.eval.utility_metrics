@@ -292,6 +292,7 @@ def plot_categorical_bar(
 
     for attribute, measurement in counts_categories.items():
         offset = width * multiplier
+        color = ["k"]
         if attribute == "Original":
             color = ["b"]
         if attribute == "Synthetic":
