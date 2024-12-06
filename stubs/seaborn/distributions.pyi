@@ -1,6 +1,7 @@
 from __future__ import annotations
 
-from typing import Any, Callable, List, Mapping, Sequence, Tuple
+from collections.abc import Mapping, Sequence
+from typing import Any, Callable
 
 import numpy as np
 import numpy.typing as npt
@@ -12,11 +13,11 @@ Array = (
     npt.ArrayLike
     | npt.NDArray[np.float64]
     | npt.NDArray[np.int_]
-    | List[List[Number]]
-    | List[Number]
+    | list[list[Number]]
+    | list[Number]
 )
 
-Color = str | Tuple[float, float, float] | Tuple[float, float, float, float]
+Color = str | tuple[float, float, float] | tuple[float, float, float, float]
 
 def kdeplot(
     data: None | Array | pd.DataFrame | Sequence[Any] | Mapping[Any, Any] = ...,

@@ -9,8 +9,9 @@ original data averaged.
 from __future__ import annotations
 
 import logging
+from collections.abc import Container, Iterable, Sequence
 from itertools import combinations
-from typing import Any, Container, Iterable, Sequence, cast
+from typing import Any, cast
 
 import matplotlib.pyplot as plt
 import numpy as np

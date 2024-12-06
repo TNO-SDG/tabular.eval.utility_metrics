@@ -28,9 +28,9 @@ classifiers = [
     "Typing :: Typed",
     "Topic :: Scientific/Engineering"
 ]
-urls = { Homepage = "https://pet.tno.nl/", Documentation = "https://docs.pet.tno.nl/sdg/tabular/eval/utility_metrics/0.3.2", Source = "https://github.com/TNO-SDG/tabular.eval.utility_metrics" }
+urls = { Homepage = "https://pet.tno.nl/", Documentation = "https://docs.pet.tno.nl/sdg/tabular/eval/utility_metrics/0.4.1", Source = "https://github.com/TNO-SDG/tabular.eval.utility_metrics" }
 dynamic = ["version"]
-requires-python = ">=3.8"
+requires-python = ">=3.9"
 dependencies = [
     "matplotlib",
     "numpy",
@@ -83,7 +83,7 @@ plugins = "numpy.typing.mypy_plugin"
 good-names = ["X", "y", "df"]  # we accept these to stay in line with sklearn's implementation
 
 [tool.tbump.version]
-current = "0.3.2"
+current = "0.4.1"
 regex = '''
 \d+\.\d+\.\d+(-(.*))?
 '''

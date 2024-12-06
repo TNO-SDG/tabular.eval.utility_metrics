@@ -5,8 +5,9 @@ synthetic data.
 
 from __future__ import annotations
 
+from collections.abc import Container, Iterable
 from itertools import combinations
-from typing import Any, Container, Iterable
+from typing import Any
 
 import matplotlib.pyplot as plt
 import numpy as np

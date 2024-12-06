@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import TYPE_CHECKING, Any, List
+from typing import TYPE_CHECKING, Any
 
 import numpy as np
 import numpy.typing as npt
@@ -13,8 +13,8 @@ Array = (
     npt.ArrayLike
     | npt.NDArray[np.float64]
     | npt.NDArray[np.int_]
-    | List[List[Number]]
-    | List[Number]
+    | list[list[Number]]
+    | list[Number]
 )
 
 class SVC(BaseSVC):  # type: ignore[misc]

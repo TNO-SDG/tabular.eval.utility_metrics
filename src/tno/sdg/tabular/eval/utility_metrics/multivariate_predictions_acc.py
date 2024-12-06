@@ -6,7 +6,8 @@ synthetic data for classification tasks.
 from __future__ import annotations
 
 import logging
-from typing import Any, Iterable, Sequence
+from collections.abc import Iterable, Sequence
+from typing import Any
 
 import matplotlib.pyplot as plt
 import numpy as np

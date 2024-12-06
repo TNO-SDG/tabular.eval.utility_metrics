@@ -25,4 +25,4 @@ from .spiderplot import compute_all_metrics as compute_all_metrics
 from .spiderplot import compute_spider_plot as compute_spider_plot
 from .univariate_distributions import visualise_distributions as visualise_distributions
 
-__version__ = "0.3.2"
+__version__ = "0.4.1"

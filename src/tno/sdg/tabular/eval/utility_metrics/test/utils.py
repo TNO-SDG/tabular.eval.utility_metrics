@@ -4,7 +4,8 @@ Module with utility functions and precomputed test input for the tests.
 
 from __future__ import annotations
 
-from typing import Any, Generator, Sequence
+from collections.abc import Generator, Sequence
+from typing import Any
 
 import numpy as np
 import numpy.typing as npt

@@ -3,6 +3,7 @@
 Extensive evaluation of the utility of synthetic data sets. The original and synthetic data are compared on distinguishability and on a univariate, bivariate and multivariate level. All four metrics are visualized in one plot with a spiderplot. Where one equals 'complete overlap' and zero equals 'no overlap' between original and synthetic data. This plot can depict multiple synthetic data sets. Therefore it can be used to evaluate different levels of privacy protection in synthetic data sets, varying parameter settings in synthetic data generators, or completely different synthetic data generators.
 
 All individual metrics depicted in the spiderplot can be visualized as well. The example_script.py shows you step by step how to generate all visualizations. The main functionalities of the scripts are:
+
 - Univariate distributions: shows the distributions of one variable for the original and synthetic data.
 - Bivariate correlations: visualizes a Pearson-r correlation matrix for all variables.
 - Multivariate predictions: shows an SVM classifier predicts accuracies for each variable training on either original or synthetic data tested on original data.
@@ -27,7 +28,7 @@ _This implementation of cryptographic software has not been audited. Use at your
 ## Documentation
 
 Documentation of the `tno.sdg.tabular.eval.utility_metrics` package can be found
-[here](https://docs.pet.tno.nl/sdg/tabular/eval/utility_metrics/0.3.2).
+[here](https://docs.pet.tno.nl/sdg/tabular/eval/utility_metrics/0.4.1).
 
 ## Install
 

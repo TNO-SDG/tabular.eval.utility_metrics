@@ -4,7 +4,8 @@ Module that tests the functionality of univariate_distributions.py.
 
 from __future__ import annotations
 
-from typing import Any, Sequence
+from collections.abc import Sequence
+from typing import Any
 
 import numpy as np
 import numpy.typing as npt

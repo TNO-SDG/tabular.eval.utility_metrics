@@ -6,7 +6,8 @@ Computation of all four metrics to visualize in one spiderplot.
 from __future__ import annotations
 
 import logging
-from typing import Any, Sequence
+from collections.abc import Sequence
+from typing import Any
 
 import pandas as pd
 import plotly.graph_objects as go
